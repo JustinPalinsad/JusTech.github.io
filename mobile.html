@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="JusTech_Logo.jpg" alt="Shop Logo" class="logo-image">
+    </div>
+    <h1 class="shop-title">JusTech</h1>
+    <center>
+        <div>Electronic Devices</div>
+    </center>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="tablet.html">Tablet</a></li>
+            <li><a href="laptop.html">Laptops</a></li>
+            <li><a  href="shoppingcart.html" class="chckout"><img src="shopping cart.png" class="checkout"></a></li>
+        </ul>
+    </div>
+
+    <div class="product">
+        <div class="product-item">
+            <img src="iphone.jpg" alt="Apple iPhone 12 Pro Max" class="product-image" onclick="addToCart('iphone.jpg')">
+            <h2>Apple iPhone 12 Pro Max</h2>
+            <p>₱83,990.00</p>
+        </div>
+        <div class="product-item">
+            <img src="xiaomi.jpg" alt="Product1" class="product-image" onclick="addToCart('xiaomi.jpg')">
+            <h2>Xiaomi Redmi 7</h2>
+            <p> ₱13,999.00</p>
+        </div>
+        <div class="product-item">
+            <img src="nubiaphone.png" alt="Product 3" class="product-image" onclick="addToCart('nubiaphone.png')">
+            <h2>ZTE Nubia Red Magic 5G</h2>
+            <p>₱44,600.00</p>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

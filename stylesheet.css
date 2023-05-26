@@ -1,0 +1,145 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #5cb85c, #0d380d);
+    color: #fff;
+    height: 100vh;
+}
+
+/* Logo styles */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.logo-image {
+    max-height: 90px;
+    max-width: 90px;
+}
+
+/* Shop title styles */
+.shop-title {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: #043a04;
+    padding: 10px;
+    border-top: 10px solid #043a04;
+    border-bottom: 10px solid #043a04;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #043a04;
+    font-size: 15pt;
+    padding: .5px;
+    border: 1px solid #043a04;
+}
+.checkout
+{
+    max-height: 25px;
+    max-width: 25px;
+
+}
+
+.chckout
+{
+    text-decoration: underline;
+}
+
+
+.navbar li a {
+    color: #fff; /* Set the same color as other text */
+    text-decoration: none; /* Remove underline */
+}
+ 
+.navbar li:hover {
+    text-decoration: underline;
+}
+
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.product-image {
+    max-height: 350px;
+    max-width: 350px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.2); /* Increase the size when hovering */
+}
+
+.product-image-fdisp {
+    max-height: 250px;
+    max-width: 250px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+}
+
+.product-image-fdisp:hover {
+    transform: scale(1.1); /* Increase the size when hovering */
+}
+
+.shopcart
+{
+    font-size: 30px;
+    text-align:  left;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.cart-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 200px;
+}
+
+.cart-image-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-image-container li {
+    margin-bottom: 10px;
+}
+
+.cart-image-container img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="JusTech_Logo.jpg" alt="Shop Logo" class="logo-image">
+    </div>
+    <h1 class="shop-title">JusTech</h1>
+    <center>
+        <div>Electronic Devices</div>
+    </center>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="tablet.html">Tablet</a></li>
+            <li><a href="laptop.html">Laptops</a></li>
+            <li><a  href="shoppingcart.html" class="chckout"><img src="shopping cart.png" class="checkout"></a></li>
+        </ul>
+    </div>
+
+    <div class="product">
+        <div class="product-item">
+            <img src="samsungtab.png" alt="Product 1" class="product-image" onclick="addToCart('samsungtab.png')">
+            <h2>SAMSUNG Galaxy Tab A 8.0"</h2>
+            <p>₱25,556.00</p>
+        </div>
+        <div class="product-item">
+            <img src="lenovotab.jpg" alt="Product 2" class="product-image" onclick="addToCart('lenovotab.jpg')">
+            <h2>Lenovo Tab P11 Pro Gen 2</h2>
+            <p>₱29,101.00</p>
+        </div>
+        <!-- Add four more product items here -->
+        <div class="product-item">
+            <img src="realmetab.jpg" alt="Product2" class="product-image" onclick="addToCart('realmetab.jpg')">
+            <h2>Realme Pad RMP2105</h2>
+            <p>₱10,990.00</p>
+        </div>
+       
+    
+        <!-- Add more product items as needed -->
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

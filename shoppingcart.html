@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="JusTech_Logo.jpg" alt="Shop Logo" class="logo-image">
+    </div>
+    <h1 class="shop-title">JusTech</h1>
+    <center>
+        <div>Electronic Devices</div>
+    </center>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="tablet.html">Tablet</a></li>
+            <li><a href="laptop.html">Laptops</a></li>
+            <li><a  href="shoppingcart.html" class="chckout"><img src="shopping cart.png" class="checkout"></a></li>
+        </ul>
+    </div>
+    <div class="CartCheckout">
+        <div class="shopping-cart">
+            <button id="clearButton">Clear</button>
+            <button id="checkoutButton">Checkout</button>
+            <h2>Your Items:</h2>
+            <div class="cart-image-container">
+                <ul id="selectedImagesList" class="chosenimages"></ul>
+            </div>
+        </div>
+    </div>
+                <script src="script.js"></script>
+                <script>
+                    // Retrieve the selected images from local storage
+                    const selectedImages = JSON.parse(localStorage.getItem('selectedImages'));
+                    
+                    // Display the selected images in the shopping cart
+                    const selectedImagesList = document.getElementById('selectedImagesList');
+                    if (selectedImagesList && selectedImages) {
+                        selectedImages.forEach(imageUrl => {
+                            const li = document.createElement('li');
+                            const img = document.createElement('img');
+                            img.src = imageUrl;
+                            img.alt = 'Selected Image';
+                            li.appendChild(img);
+                            selectedImagesList.appendChild(li);
+                        });
+                    }
+                    
+                    // Clear the selected images list when the clear button is clicked
+                    const clearButton = document.getElementById('clearButton');
+                    clearButton.addEventListener('click', function() {
+                        localStorage.removeItem('selectedImages');
+                        selectedImagesList.innerHTML = '';
+                    });
+                
+                    // Checkout button event handler
+                    const checkoutButton = document.getElementById('checkoutButton');
+                    checkoutButton.addEventListener('click', function() {
+                        if (selectedImages && selectedImages.length > 0) {
+                            // Order placed
+                            alert('Order placed');
+                        } else {
+                            // No orders made
+                            alert('No orders have been made');
+                        }
+                    });
+                </script>
+                
+
+    <script src="script.js"></script>
+</body>
+</html>
